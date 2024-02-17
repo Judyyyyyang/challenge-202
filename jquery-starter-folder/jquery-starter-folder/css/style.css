@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "MyFont";
+}
+@font-face {
+  font-family: 'MyFont';
+  src: url('./2157-font.otf') format('opentype');
+}
+#home-screen {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(206, 239, 3, 1);
+  text-align: center;
+  position: relative;
+}
+
+#welcome-text {
+  padding-top: 2%;
+}
+
+#change-bg-color {
+  margin-top: 3%;
+}
+h1 {
+  padding: 50px 0;
+  color: #8100d8;
+}
+h2 {
+  color: #8100d8;
+}
+#btn {
+  padding: 10px;
+  background: #214f91;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  margin-top: 300px;
+}
+.moveAnimation::after {
+  animation: containerAnimation 2s;
+}
+.newClass {
+  color: red !important;
+}
+.star {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  color: #29a6ff;
+  font-size: 200px;
+  background: #29a6ff;
+  margin: 0 auto;
+ 
+}
+.star::after {
+  background: transparent;
+  content: "★";
+  font-size: 200px;
+  transform: translateX(-10%);
+  position: absolute;
+}
+@keyframes containerAnimation {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
